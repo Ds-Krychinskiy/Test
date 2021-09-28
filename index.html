@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <div class="wraper">
+        <header>
+            <div class="vector">
+                <img src="./img/Vector2.svg" alt="">
+                <img src="./img/Vector1.svg" alt="">
+            </div>
+            <div>
+            <a href="#informationes">Jane Doe</a>
+            <a href="#form">Tell us about yourself</a>
+            <a href="#slider">Slider</a>
+            </div>
+        </header>
+        <div class="continens">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div>
+                <img src="./img/photo.png" alt="Sorry, Bro">
+            </div>
+        <div id="informationes" class="informationes">
+            <h1>Jane Doe</h1>
+            <div class="data">
+                <p><span>Date of birth:</span> 21.04.2001</p>
+                <p><span>Gender:</span> Famale</p>
+                <p><span>Country:</span> Corea</p>
+            </div>
+            <h2>About me</h2>
+            <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alique.
+                Ut enim ad minim veniam, quis nostrud exercitation ullmco labores nisi ut aliquip ex ea commodo consequat.
+                <br>
+                <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        </div>
+    
+        <div id="form" class="form">
+            <div class="square3"></div>
+            <div class="square4"></div>
+            <div class="square5"></div>
+            <div class="square6"></div>
+            <div class="square7"></div>
+            <div class="square8"></div>
+            
+            <form id="form">
+                <h2>Tell us about yourself</h2>
+                <div id="step-first" class="input_row">
+
+                    <div class="input_wraper">
+                        <label for="name">Your mane</label>
+                        <input id="name" placeholder="Tell us your name" autocomplete="off"></input>
+                    </div>
+
+                    <div class="input_wraper">
+                        <label for="gender">Your gender</label>
+                        <select id="gender">
+                        <option value="" selected disabled hidden>Chose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="step-second" class="input_row hidden">
+
+                    <div class="input_wraper">
+                        <label for="country">Your country</label>
+                        <input id="country" placeholder="Your country" autocomplete="off"></input>
+                    </div>
+
+                    <div class="input_wraper">
+                        <label for="city">Your City</label>
+                        <input id="city" placeholder="Your city" autocomplete="off"></input>
+                    </div>
+
+                    <div class="input_wraper">
+                        <label for="date">Your date of birth</label>
+                        <input id="date" type="date"></input>
+                    </div>
+
+                </div>
+
+                    <div id="step-third" class="input_row hidden">
+                        <label for="files">
+                             <div class="file-uploader" id="files-list-view"> 
+                                 <p>Proof your identity with some documents</p>
+                                 <div>Add document</div>
+                             </div>
+                        </label>
+                        <input accept="image/jpeg,image/png,image/gif" class="add_document" id="files" type="file" multiple="multiple"></input>
+                    </div>
+
+                    <div id="file_wraper" class="file_wraper">
+                        
+                    </div>
+
+                    <button id="submit_button" class="submit_button" disabled>Send info</button>
+            </form>
+        </div>
+        <div class="container">
+            <div id="slider" class="slider">
+                <div id="slider-line" class="slider-line">
+                        <div class="slide">
+                            <div class="wraper_text">
+                                <h2>Slide this pfoto</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur</p>
+                            </div>
+                            <img src="./img/Rectangle 10.png" alt="">
+                        </div>    
+                        <div class="slide">
+                            <div class="wraper_text">
+                                <h2>Slide this pfoto</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur</p>
+                            </div>
+                            <img src="./img/Rectangle 10.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <div class="wraper_text">
+                                <h2>Slide this pfoto</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur</p>
+                            </div>
+                            <img src="./img/Rectangle 10.png" alt="">
+                        </div>
+                </div>
+                <img id="right_button" class="right_button" src="./img/arowRight.svg" alt="">
+                <img id="left_button" class="left_button" src="./img/arowRight.svg" alt="">
+                <div class="circles">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+</div>
+   <script src="script.js"></script>
+</body>
+
+</html>
